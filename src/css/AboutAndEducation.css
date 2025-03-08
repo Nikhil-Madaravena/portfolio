@@ -1,0 +1,115 @@
+.about-education {
+    background: linear-gradient(135deg, #050505 10%, #0b0b0b 50%, #020202 90%);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Soft Glow Effects */
+.about-education::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 30% 30%, rgba(59, 130, 246, 0.08), transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(139, 92, 246, 0.1), transparent 50%);
+    opacity: 1;
+}
+
+.about-education::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, rgba(0, 0, 0, 0.5), transparent 70%);
+    backdrop-filter: blur(8px);
+}
+
+.container {
+    display: flex;
+    max-width: 1000px;
+    gap: 50px;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+/* Image Styling */
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-image {
+    width: 450px;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+}
+
+/* Text Content */
+.text-container {
+    flex: 1.5;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: "Arial", sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Education Styling */
+.education {
+    margin-top: 30px;
+    padding-left: 20px;
+    border-left: 4px solid #3b82f6;
+}
+
+.education-title {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Arial", sans-serif;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.education p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-container {
+        margin-bottom: 20px;
+    }
+
+    .education {
+        padding-left: 0;
+        border-left: none;
+    }
+}

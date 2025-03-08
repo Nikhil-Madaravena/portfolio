@@ -11,6 +11,7 @@ import syntaxErrorImage from './assets/Screenshot 2025-03-08 194142.png';
 import clinicPingImage from './assets/image.png';
 import doodleDelightImage from './assets/Screenshot 2025-03-08 194824.png';
 import neoVisionImage from './assets/Screenshot 2025-03-08 195021.png';
+import AboutAndEducation from './components/AboutAndEducation';
 
 
 function App() {
@@ -87,6 +88,10 @@ function App() {
         </div>
       </motion.div>
     </header>
+
+    <AboutAndEducation />
+
+
       <section id="skills" className="skills-section">
         <h2 className="section-title">Skills & Technologies</h2>
         <div className="skills-grid">

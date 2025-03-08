@@ -66,12 +66,6 @@
       cursor: pointer;
     }
     
-    /* Gradient Effect for Logo */
-    .logo-gradient {
-      background: #60a5fa;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
     
     /* Desktop Navigation Links (Hidden on Small Screens) */
     .navbar-links {
@@ -103,12 +97,6 @@
     cursor: pointer;
   }
   
-  /* Gradient Effect for Logo */
-  .logo-gradient {
-    background: linear-gradient(90deg, #60a5fa, #a855f7);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
   
   /* Desktop Navigation Links (Hidden on Small Screens) */
   .navbar-links {

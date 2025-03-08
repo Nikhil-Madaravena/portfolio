@@ -63,7 +63,7 @@ body, html {
 /* Hero Text */
 .hero-title {
     font-size: 5rem;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 1.2;
     margin-bottom: 16px;
 }
@@ -290,3 +290,4 @@ body, html {
     background: radial-gradient(circle at center, rgba(0, 0, 0, 0.5), transparent 70%);
     backdrop-filter: blur(8px);
 }
+

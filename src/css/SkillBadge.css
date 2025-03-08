@@ -8,7 +8,7 @@
   }
   
   .skill-badge:hover {
-    border-color: rgba(168, 85, 247, 0.5); /* hover:border-purple-500/50 */
+    border-color: #3b82f6; /* hover:border-purple-500/50 */
   }
   
   .skill-text {
