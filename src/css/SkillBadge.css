@@ -1,0 +1,18 @@
+.skill-badge {
+    padding: 12px 24px;
+    background: linear-gradient(to right, #111827, #1f2937); /* from-gray-900 to-gray-800 */
+    border-radius: 12px; /* rounded-xl */
+    border: 1px solid #1f2937; /* border-gray-800 */
+    transition: all 0.2s ease-in;
+    backdrop-filter: blur(16px); /* backdrop-blur-xl */
+  }
+  
+  .skill-badge:hover {
+    border-color: rgba(168, 85, 247, 0.5); /* hover:border-purple-500/50 */
+  }
+  
+  .skill-text {
+    color: white;
+    font-weight: 500;
+  }
+  
