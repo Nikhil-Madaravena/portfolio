@@ -12,6 +12,7 @@ import clinicPingImage from './assets/image.png';
 import doodleDelightImage from './assets/Screenshot 2025-03-08 194824.png';
 import neoVisionImage from './assets/Screenshot 2025-03-08 195021.png';
 import AboutAndEducation from './components/AboutAndEducation';
+import resume from './assets/Nikhil-Resume.pdf';
 
 
 function App() {
@@ -60,34 +61,42 @@ function App() {
     <div className="app-container">
       <Navbar />
       <header id="home" className="hero-section">
-      <motion.div 
-        className="hero-content"
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
+  <motion.div 
+    className="hero-content"
+    initial={{ opacity: 0, y: 30 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8, ease: "easeOut" }}
+  >
+    <div>
+      <h1 className="hero-title">Nikhil<br /> Madaravena</h1>
+      <p className="hero-subtitle">
+        Front-End Developer | Tech Enthusiast | DSA Enthusiast | Open Source Contributor | Startup Enthusiast
+      </p>
+      <div className="social-icons">
+        <a href="https://github.com/Nikhil-Madaravena" className="social-link"><Github size={24} /></a>
+        <a href="https://www.linkedin.com/in/nikhil-madaravena/" className="social-link"><Linkedin size={24} /></a>
+        <a href="mailto:nikhil.madaravena@gmail.com" className="social-link"><Mail size={24} /></a>
+      </div>
+      <a 
+        href={resume}
+        download="Nikhil_Madaravena_Resume.pdf" 
+        className="download-resume-button"
       >
-        <div>
-        <h1 className="hero-title">Nikhil<br /> Madaravena</h1>
-        <p className="hero-subtitle">
-          Front-End Developer | Tech Enthusiast | DSA Enthusiast | Open Source Contributor | Startup Enthusiast
-        </p>
-        <div className="social-icons">
-          <a href="https://github.com/Nikhil-Madaravena" className="social-link"><Github size={24} /></a>
-          <a href="https://www.linkedin.com/in/nikhil-madaravena/" className="social-link"><Linkedin size={24} /></a>
-          <a href="mailto:nikhil.madaravena@gmail.com" className="social-link"><Mail size={24} /></a>
-        </div>
-        </div>
-        <div>
-        <img
-          src={heroImage}
-          width="300"
-          height="300"
-          alt="Developer"
-          className="hero-image"
-        />
-        </div>
-      </motion.div>
-    </header>
+        Download Resume
+      </a>
+    </div>
+    <div>
+      <img
+        src={heroImage}
+        width="300"
+        height="300"
+        alt="Developer"
+        className="hero-image"
+      />
+    </div>
+  </motion.div>
+</header>
+
 
     <AboutAndEducation />
 

@@ -82,6 +82,24 @@ body, html {
     margin-top: 20px;
 }
 
+.download-resume-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .download-resume-button:hover {
+    background-color: #0056b3;
+  }
+  
+
 .social-link {
     color: white;
     transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
